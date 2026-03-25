@@ -8,7 +8,7 @@
 ## Workflow Index
 
 | # | Workflow | Domain | Last Updated |
-|---|----------|--------|--------------|
+|---|----------|--------|-------------|
 | 1 | Task Kickoff Protocol | General | 2026-03-16 |
 | 2 | File Save Protocol | General | 2026-03-16 |
 | 3 | Data Conflict Resolution | Salesforce / Data | 2026-03-16 |
@@ -73,7 +73,8 @@
 **When:** Extracting text from a PDF for analysis or context loading.
 
 - **OMs, rent rolls, T-12s, P&Ls (tabular data)** → use `liteparse` with `--no-ocr` for digital PDFs. Preserves column layout; markitdown fragments multi-column tables into useless vertical strips.
-- **Scanned / image-based PDF** → use `pymupdf4llm` directly
+  - CLI: `/sessions/optimistic-cool-shannon/.npm-global/bin/lit parse file.pdf --no-ocr -o out.txt`
+- **Scanned / image-based PDF** → use `pymupdf4llm` directly (liteparse OCR needs network access to fetch tesseract models — unavailable in sandbox)
 - **Prose-heavy docs** (narratives, bios, letters) → markitdown is fine
 - Always save extracted output as a `.md` or `.txt` file and link it — never dump raw output into chat
 

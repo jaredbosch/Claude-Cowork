@@ -25,3 +25,8 @@ CRM: REthink Salesforce
 
 ## Background
 Sunstone REA was formed by a PE group merging two boutique MHC brokerages — legacy Sunstone and OtherStreet — and also recruiting Jared Bosch and Don Vedeen. Everyone now operates under the Sunstone REA banner.
+
+Jared and Don are partners / recruited Directors. Legacy Sunstone and OtherStreet teams are mixed across the roster above.
+
+## Notes
+- Specific roles for most team members still unknown — update as context develops
